@@ -1,0 +1,13 @@
+package com.project.ecobloom;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class EcobloomApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(EcobloomApplication.class, args);
+	}
+
+}
