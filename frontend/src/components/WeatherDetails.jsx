@@ -109,9 +109,9 @@ export default function WeatherDetails() {
             }
             setPlantNames(response.data || []);
         } catch (error) {
-            console.error("Error fetching plant data:", error);
+            console.error("Bitki verileri alınırken hata oluştu:", error);
             setPlantNames([]);
-            setError("No plant data available!");
+            setError("Bitki verisi mevcut değil!");
         }
     };
 

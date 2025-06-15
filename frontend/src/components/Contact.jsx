@@ -17,7 +17,7 @@ export default function Contact() {
 
             <div className="max-w-7xl mx-auto ">
                 {/* Get in Touch Bölümü */}
-                <div className="grid grid-cols-[1fr_1.7fr] gap-10">
+                <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.7fr] gap-10">
                     <div>
                         <h2 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-4xl">Bize Ulaşın</h2>
                         <p className="mt-5 text-lg text-gray-600 leading-snug max-w-md ">
@@ -31,23 +31,23 @@ export default function Contact() {
                         </p>
                     </div>
 
-                    {/* İletişim Kartları - Yan Yana Kartlar Arası Boşluk Artırıldı */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-10">
-                        <div className="bg-gray-50 px-10 py-10 w-[370px] min-h-[130px] rounded-xl shadow-md">
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10">
+                        <div className="bg-gray-50 px-10 py-10 w-full max-w-md min-h-[130px] rounded-xl shadow-md">
                             <h3 className="text-lg font-semibold text-gray-900">Anıl Korkmaz</h3>
                             <a href="21070001210@stu.yasar.edu.tr" className="text-indigo-600 mt-5 block">
                                 21070001210@stu.yasar.edu.tr
                             </a>
                             <p className="text-gray-600 mt-1">+90 (534) 868-0594</p>
                         </div>
-                        <div className="bg-gray-50 px-10 py-10 w-[370px] min-h-[130px] rounded-xl shadow-md">
+                        <div className="bg-gray-50 px-10 py-10 w-full max-w-md min-h-[130px] rounded-xl shadow-md">
                             <h3 className="text-lg font-semibold text-gray-900">İbrahim Halil Özdemir</h3>
                             <a href="20070001005@stu.yasar.edu.tr" className="text-indigo-600 mt-5 block">
                                 20070001005@stu.yasar.edu.tr
                             </a>
                             <p className="text-gray-600 mt-1">+90 (542) 790-8909</p>
                         </div>
-                        <div className="bg-gray-50 px-10 py-10 w-[370px] min-h-[130px] rounded-xl shadow-md">
+                        <div className="bg-gray-50 px-10 py-10 w-full max-w-md min-h-[130px] rounded-xl shadow-md">
                             <h3 className="text-lg font-semibold text-gray-900">Mustafa Eren Yurdaşan</h3>
                             <a href="20070001025@stu.yasar.edu.tr" className="text-indigo-600 mt-5 block">
                                 20070001025@stu.yasar.edu.tr
@@ -58,9 +58,9 @@ export default function Contact() {
                     </div>
                 </div>
 
-                {/* Locations Bölümü - Yan Yana Kartlar Arası Boşluk Artırıldı */}
+
                 <div className="mt-15 border-t-[0.5px] border-gray-300 pt-15">
-                    <div className="grid grid-cols-[1fr_1.7fr] gap-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.7fr] gap-10">
                         <div>
                             <h2 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-4xl">Lokasyonlarımız</h2>
                             <p className="mt-5 text-lg text-gray-600 leading-snug max-w-md">
@@ -70,9 +70,9 @@ export default function Contact() {
                             </p>
                         </div>
 
-                        {/* Lokasyon Kartları - Yan Yana Kartlar Arası Boşluk Artırıldı */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-10">
-                            <div className="bg-gray-50 px-10 py-10 w-[370px] min-h-[130px] rounded-xl shadow-md">
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-10">
+                            <div className="bg-gray-50 px-10 py-10 w-full max-w-md min-h-[130px] rounded-xl shadow-md">
                                 <h3 className="text-lg font-semibold text-gray-900">İzmir</h3>
                                 <p className="text-gray-600 mt-5">Yaşar Üniversitesi</p>
                                 <p className="text-gray-600 mt-1">Selçuk Yaşar Kampüsü, Bornova</p>

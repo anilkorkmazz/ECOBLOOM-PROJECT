@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
-import { FaPaperPlane } from "react-icons/fa";
+import { FaPaperPlane, FaArrowLeft } from "react-icons/fa";
 import botProfile from "../assets/ecobloom.png";
+
 
 export default function ChatBotDetails() {
     const [messages, setMessages] = useState([
@@ -79,12 +80,24 @@ export default function ChatBotDetails() {
                 />
             </div>
 
+
+
             {/* Başlık */}
             <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/30 border-b border-gray-200 shadow-sm">
+                {/* 🔙 Geri Butonu */}
+                <button
+                    onClick={() => window.history.back()}
+                    className="absolute left-6 top-1/2 transform -translate-y-1/2 flex items-center gap-2 bg-white bg-opacity-80 px-4 py-2 rounded-full shadow hover:bg-opacity-100 transition"
+                >
+                    <FaArrowLeft className="text-green-700" size={20} />
+                    <span className="text-green-700 font-semibold">Geri</span>
+                </button>
+
                 <div className="max-w-3xl mx-auto px-4 py-4 text-center">
                     <h1 className="text-lg font-semibold">Bitki Asistanı</h1>
                 </div>
             </header>
+
 
             {/* Mesajlar */}
             <main className="flex-grow w-full max-w-3xl mx-auto px-4 pt-24 pb-6 space-y-6">
@@ -113,7 +126,7 @@ export default function ChatBotDetails() {
                         </div>
                     </div>
                 ))}
-                {/* Otomatik scroll için referans */}
+
                 <div ref={bottomRef} />
             </main>
 
@@ -138,6 +151,9 @@ export default function ChatBotDetails() {
                     </div>
                 </div>
             </footer>
+
+
+
 
             {/* Alt Dekor */}
             <div

@@ -118,7 +118,6 @@ export default function LocationDetails() {
 
    // ######################### bu gerçek API Verimiz #################################################################
 
-
     const handleCitySelect = async (city) => {
         setLocation(city);
         setShowList(false);
@@ -138,7 +137,7 @@ export default function LocationDetails() {
                 setError("⚠️ Bu şehir için öneri bulunamadı.");
             }
         } catch (error) {
-            console.error("Error fetching plant data:", error);
+            console.error("Bitki verileri alınırken hata oluştu:", error);
             setPlantNames([]);
             setError("⚠️ Sunucudan veri alınamadı.");
         }
